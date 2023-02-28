@@ -2,8 +2,11 @@
 
 import 'package:animated_theme_switcher/animated_theme_switcher.dart';
 import 'package:flutter/material.dart';
+import 'package:logintask/pages/client_screen/client_page.dart';
+import 'package:logintask/pages/get_api_data/get_api.dart';
+import 'package:logintask/pages/login/login_page.dart';
 import 'package:logintask/pages/profile_page.dart';
-import 'package:logintask/pages/client_profile.dart';
+import 'package:logintask/pages/client_screen/client_profile.dart';
 import 'package:logintask/widget/button_widget.dart';
 
 class LoginButtonScreen extends StatefulWidget {
@@ -58,7 +61,7 @@ class _LoginButtonScreenState extends State<LoginButtonScreen> {
                         Navigator.push(
                             (context),
                             MaterialPageRoute(
-                                builder: (context) => ClientProfileScreen()));
+                                builder: (context) => LoginPage()));
                       },
                       child: Container(
                         alignment: Alignment.center,
@@ -88,7 +91,7 @@ class _LoginButtonScreenState extends State<LoginButtonScreen> {
                         Navigator.push(
                             (context),
                             MaterialPageRoute(
-                                builder: (context) => ProfilePage()));
+                                builder: (context) => GetDataScreen()));
                       },
                       child: Container(
                         alignment: Alignment.center,

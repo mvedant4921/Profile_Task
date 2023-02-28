@@ -28,18 +28,6 @@ class _ClientProfileScreenState extends State<ClientProfileScreen> {
           body: ListView(
             physics: BouncingScrollPhysics(),
             children: [
-Padding(
-  padding: const EdgeInsets.symmetric(horizontal: 30,vertical: 20),
-  child:   TextFieldWidget(
-  
-                    label: 'Search Maid',
-  
-                    text: "sejal",
-  
-                    onChanged: (email) {},
-  
-                  ),
-),
               ProfileWidget(
                 imagePath: user.imagePath,
                 onClicked: () {

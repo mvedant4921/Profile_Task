@@ -3,7 +3,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:logintask/pages/loginbutton.dart';
+import 'package:logintask/pages/login/loginbutton.dart';
 
 class SplaceScreen extends StatefulWidget {
   const SplaceScreen({super.key});
@@ -15,7 +15,7 @@ class SplaceScreen extends StatefulWidget {
 class _SplaceScreenState extends State<SplaceScreen> {
   redirectPage() {
     Timer(Duration(seconds: 2), () {
-      Navigator.push((context),
+      Navigator.pushReplacement((context),
           MaterialPageRoute(builder: (context) => LoginButtonScreen()));
     });
   }

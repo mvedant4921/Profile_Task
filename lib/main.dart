@@ -1,7 +1,7 @@
 import 'package:animated_theme_switcher/animated_theme_switcher.dart';
 import 'package:flutter/material.dart';
 import 'package:logintask/pages/profile_page.dart';
-import 'package:logintask/pages/loginbutton.dart';
+import 'package:logintask/pages/login/loginbutton.dart';
 import 'package:logintask/pages/splash_screen.dart';
 import 'package:logintask/themes.dart';
 import 'package:logintask/utils/user_preferences.dart';
@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
         builder: (context) => MaterialApp(
           debugShowCheckedModeBanner: false,
           // theme: initTheme,
-          // theme: ThemeProvider.of(context),
+          // theme: Theme.of(context),
           title: title,
           home: SplaceScreen(),
         ),
